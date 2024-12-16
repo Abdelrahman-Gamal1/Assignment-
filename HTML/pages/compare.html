@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Cameras - SteveEditor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/compare.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SteveEditor</div>
+        <nav>
+            <ul>
+                <li><a href="/assignment 2/index.html">Main</a></li>
+                <li><a href="/assignment 2/pages/compare.html">compare</a></li>
+                <li><a href="/assignment 2/pages/about.html">About</a></li>
+                <li><a href="/assignment 2/pages/registration.html">Register</a></li>
+                <li><a href="/assignment 2/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </header>
+    <main>
+        <section class="camera-list">
+            <h2>Top 3 Cameras</h2>
+            <ol>
+                <li>Canon EOS R5</li>
+                <li>Sony Alpha 7 IV</li>
+                <li>Nikon Z6 II</li>
+            </ol>
+        </section>
+
+        <section class="comparison-table">
+            <h2>Camera Comparison</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Canon EOS R5</th>
+                    <th>Sony Alpha 7 IV</th>
+                    <th>Nikon Z6 II</th>
+                </tr>
+                <tr>
+                    <td>Resolution</td>
+                    <td>45 MP</td>
+                    <td>33 MP</td>
+                    <td>24.5 MP</td>
+                </tr>
+                <tr>
+                    <td>Video Quality</td>
+                    <td>8K @ 30fps</td>
+                    <td>4K @ 60fps</td>
+                    <td>4K @ 60fps</td>
+                </tr>
+                <tr>
+                    <td>ISO Range</td>
+                    <td>100-51200</td>
+                    <td>100-204800</td>
+                    <td>100-51200</td>
+                </tr>
+                <tr>
+                    <td>Battery Life</td>
+                    <td>320 shots</td>
+                    <td>580 shots</td>
+                    <td>410 shots</td>
+                </tr>
+            </table>
+        </section>
+        
+       
+    
+        <!-- Calculator Section -->
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <div class="calc-container">
+                <input type="text" id="display" disabled />
+                <div class="buttons">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="deleteLast()">DEL</button>
+                    <button onclick="appendValue('/')">/</button>
+                    <button onclick="appendValue('*')">*</button>
+                    <button onclick="appendValue('7')">7</button>
+                    <button onclick="appendValue('8')">8</button>
+                    <button onclick="appendValue('9')">9</button>
+                    <button onclick="appendValue('-')">-</button>
+                    <button onclick="appendValue('4')">4</button>
+                    <button onclick="appendValue('5')">5</button>
+                    <button onclick="appendValue('6')">6</button>
+                    <button onclick="appendValue('+')">+</button>
+                    <button onclick="appendValue('1')">1</button>
+                    <button onclick="appendValue('2')">2</button>
+                    <button onclick="appendValue('3')">3</button>
+                    <button onclick="calculateResult()">=</button>
+                    <button onclick="appendValue('0')" class="zero">0</button>
+                    <button onclick="appendValue('.')">.</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
